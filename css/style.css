@@ -1,0 +1,236 @@
+*{
+    font-family: "Raleway", sans-serif;
+}
+
+
+body, html, head{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.logo{
+height: 50px;
+padding-top: 15px;
+}
+
+.mainHeader{
+    height: 106px;
+    background-color: white;
+    color: black;
+    width: 100%;
+    text-align: center;
+    top:0;
+}
+
+.mainHeader a{
+    color: black;
+    text-decoration: none;
+}
+
+nav{
+    display: flex;
+}
+
+nav li:hover{
+    scale:1.2;
+    background-color: rgb(239, 239, 239);
+}
+
+.nav-active{
+    background-color: rgb(211, 211, 211);
+}
+
+
+.linkBox{
+    margin-top: -20px;
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+    display: flex;  
+    list-style-type: none;
+    justify-content: space-between;
+    background-color: aqua;
+    height: 40px;
+    align-items: center;
+    transition: ease-in-out 0.2s;
+}
+
+.linkBox.active{
+    background-color: beige;
+}
+
+.linkBox:hover{
+    scale:1.2;
+    background-color: aquamarine;
+    transition: ease-in-out 0.2s;
+}
+
+.mainImg{
+    width: 100%;
+    filter:blur(2px);
+}
+
+.maps{
+    height: 600px;
+    width: 100%;
+}
+
+.contactBox{
+    background-color: white;
+    opacity: 0.9;
+    border-radius: 10px;
+    text-align: center;
+    height: 50%;
+    width: 60%;
+    font-size: 2rem;
+    top: 40%;
+    position: absolute;
+    margin-left: 20%;
+    display: flex;
+    align-items: center;
+}
+
+.popup-image {
+    width : 100%;
+    border-radius: 5px;
+    min-height: 60px;
+    max-height: 250px;
+    object-fit: cover;
+}
+
+.popup-link{
+    text-decoration: none;
+    color: black;
+}
+
+.pageHeader{
+    text-align: center;
+}
+
+.swiper{
+    height: 70%;
+    min-height: 300px
+
+}
+
+.swiper_image {
+    width: 100%;
+    height: 600px;
+    object-fit:cover;
+    margin-top: -20px;
+}
+.mainContainer{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-bottom: 25px;
+    font-family: "Dosis", sans-serif;
+    font-weight: 200;
+}
+
+.subContainer{
+    height: 400px;
+    width: 45%;
+    background-color: brown;
+    margin-top: 40px;
+    margin-left:20px;
+    position: relative;
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+
+.subSubContainer{
+    height: 75%;
+    width: 100%;
+    background-color: yellowgreen;
+    position: absolute;
+}
+
+.containerImg{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    object-fit: cover;
+    transition: ease-in-out, 0.3s;
+}
+
+.containerImg:hover{
+    scale:1.1;
+}
+
+.containerHeader{
+    font-size: 2rem;
+    z-index: 100;
+    position: relative;
+}
+
+.tripleSubContainer{
+    background-color:aqua;
+    height: 15%;
+    width: 40%;
+    position: relative;
+    border: 1px, solid, black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: ease-in-out, 0.3s;
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+.tripleSubContainer:hover{
+    scale:1.1;
+    transition: ease-in-out, 0.3s;
+    border-radius: 5px;
+    border-color: blue;
+}
+
+
+
+.raleway-uniquifier {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.oMainContainer{
+    height: 450px;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 35px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.oImgLeft{
+    position: absolute;
+    width: 55%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.oListRight{
+    position: absolute;
+    right: 12%;
+}
+
+.oImgRight{
+    position: absolute;
+    width: 55%;
+    height: 100%;
+    right: 0;
+    object-fit: cover;
+}
+
+.oListLeft{
+    position: absolute;
+    left: 12%;
+}
+
+
