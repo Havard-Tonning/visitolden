@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <title>Overnatting</title>
 </head>
 <body>
@@ -24,9 +26,19 @@
 
     <div class="oMainContainer">
         <div class="oImgLeft">
-
-            
-        </div>
+                <!-- Slider main container -->
+            <div class="swiper">
+        <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"><img class="swiper_image" src="../bilder/garageapt1.jpg"></div>
+        <div class="swiper-slide"><img class="swiper_image" src="../bilder/garageapt1.jpg"></div>
+        <div class="swiper-slide"><img class="swiper_image" src="../bilder/garageapt1.jpg"></div>
+    </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>       
+</div>
         <div class="oListRight">
             <h2 class="oHead">Leilighet med fjordutsikt</h2>
             <ul>
@@ -36,8 +48,9 @@
                 <li>Eget kjøkken</li>
                 <li>Eget bad</li>
                 <li>Uteområde</li>
-                <li>Privat Basseng</li>
+                <li>Privat basseng</li>
             </ul>
+            <a href="./leiligheter/leilighet1.html" class="infoBox">Mer info</a>
         </div>
     </div>
 
@@ -51,14 +64,43 @@
                 <li>Eget bad</li>
                 <li>Uteområde</li>
                 <li>Flatskjerm-TV</li>
-                <li>Privat Basseng</li>
+                <li>Privat basseng</li>
             </ul>
+            <a href="./leiligheter/minihus.html" class="infoBox">Mer info</a>
+
+        </div><div class="oImgRight">
+                <!-- Slider main container -->
+            <div class="swiper">
+        <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"><img class="swiper_image" src="../bilder/tinyhouse.jpg"></div>
+        <div class="swiper-slide"><img class="swiper_image" src="../bilder/tinyhouse.jpg"></div>
+        <div class="swiper-slide"><img class="swiper_image" src="../bilder/tinyhouse.jpg"></div>
+    </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+            
         </div>
-        <img src="../bilder/tinyhouse.jpg" class="oImgRight">
     </div>
 
     <div class="oMainContainer">
-        <img src="../bilder/studio.jpg" class="oImgLeft">
+<div class="oImgLeft">
+                <!-- Slider main container -->
+            <div class="swiper">
+        <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"><img class="swiper_image" src="../bilder/studio.jpg"></div>
+        <div class="swiper-slide"><img class="swiper_image" src="../bilder/studio.jpg"></div>
+        <div class="swiper-slide"><img class="swiper_image" src="../bilder/studio.jpg"></div>
+    </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+            
+        </div>
         <div class="oListRight">
             <h2 class="oHead">Studioleilighet med fjordutsikt</h2>
             <ul>
@@ -70,10 +112,13 @@
                 <li>Eget bad</li>
                 <li>Egen inngang</li>
                 <li>Uteområde</li>
-                <li>Privat Basseng</li>
+                <li>Privat basseng</li>
             </ul>
+                        <a href="./leiligheter/studio.html" class="infoBox">Mer info</a>
+
         </div>
     </div>
 
+    <script src="../js/swiper.js"></script>
 </body>
 </html>

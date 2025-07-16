@@ -14,6 +14,7 @@ body, html, head{
 .logo{
 height: 50px;
 padding-top: 15px;
+font-weight: 200;
 }
 
 .mainHeader{
@@ -23,6 +24,7 @@ padding-top: 15px;
     width: 100%;
     text-align: center;
     top:0;
+    font-weight:100;
 }
 
 .mainHeader a{
@@ -49,22 +51,23 @@ nav li:hover{
     width: 100%;
     padding-left: 5%;
     padding-right: 5%;
+    margin:-10px;
     display: flex;  
     list-style-type: none;
     justify-content: space-between;
-    background-color: aqua;
+    background-color: rgb(255, 250, 250);
     height: 40px;
     align-items: center;
     transition: ease-in-out 0.2s;
 }
 
 .linkBox.active{
-    background-color: beige;
+    background-color: rgb(187, 187, 187);
 }
 
 .linkBox:hover{
     scale:1.2;
-    background-color: aquamarine;
+    background-color: rgb(255, 166, 166);
     transition: ease-in-out 0.2s;
 }
 
@@ -111,9 +114,8 @@ nav li:hover{
 }
 
 .swiper{
-    height: 70%;
+    height: 100%;
     min-height: 300px
-
 }
 
 .swiper_image {
@@ -122,6 +124,7 @@ nav li:hover{
     object-fit:cover;
     margin-top: -20px;
 }
+
 .mainContainer{
     display: flex;
     justify-content: space-around;
@@ -134,7 +137,6 @@ nav li:hover{
 .subContainer{
     height: 400px;
     width: 45%;
-    background-color: brown;
     margin-top: 40px;
     margin-left:20px;
     position: relative;
@@ -151,7 +153,7 @@ nav li:hover{
 }
 
 .containerImg{
-    width: 100%;
+    width: 100% ;
     height: 100%;
     position: relative;
     object-fit: cover;
@@ -169,7 +171,6 @@ nav li:hover{
 }
 
 .tripleSubContainer{
-    background-color:aqua;
     height: 15%;
     width: 40%;
     position: relative;
@@ -206,6 +207,7 @@ nav li:hover{
     display: flex;
     align-items: center;
     position: relative;
+    background-color:   rgb(240, 240, 240);
 }
 
 .oImgLeft{
@@ -233,4 +235,20 @@ nav li:hover{
     left: 12%;
 }
 
+
+.infoBox{
+    position: absolute;
+    color: black;
+    font-size: 1.4rem;
+    padding: 20px 50px 20px 50px;
+    border: 1px solid black;
+    transition: ease-in-out 0.2s;
+    text-decoration: none;
+}
+
+.infoBox:hover{
+    border-radius: 3px;
+    scale: 1.2;
+    transition: ease-in-out 0.2s;
+}
 
