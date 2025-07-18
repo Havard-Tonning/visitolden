@@ -51,7 +51,7 @@ L.marker([61.84308950390088, 6.811742353578101], {icon: L.icon({
     iconAnchor: [12, 41],
     popupAnchor: [1, -34],
     shadowSize: [41, 41]})}).addTo(map)
-    .bindPopup("<a class='popup-link' href='./kartinnhold/fjordsuvenir.html'><H3>Fjord Suvenir</H3><p>Fjord Suvenir er den største suvenir butikken i bygda. Her har de alt fra vikinghjelmer til skjeer med Olden på.</p><img src='../bilder/fjordsuvenir.jpg' class='popup-image'> <style='opacity:0'></a>");
+    .bindPopup("<a class='popup-link' href='./kartinnhold/fjordsuvenir.html'><H3>Fjord Suvenir</H3><p>Fjord Suvenir er den største suvenirbutikken i bygda. Her har de alt fra vikinghjelmer til skjeer med Olden på.</p><img src='../bilder/fjordsuvenir.jpg' class='popup-image'> <style='opacity:0'></a>");
 
 L.marker([61.84323319253481, 6.8118417518592995], {icon: L.icon({
     iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-red.png',shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/images/marker-shadow.png',
