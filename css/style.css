@@ -334,3 +334,85 @@ h1, h2, h3{
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
  }
+
+
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    overflow: hidden;
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.1));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-content {
+    text-align: center;
+    color: white;
+    max-width: 800px;
+    padding: 20px;
+}
+
+.hero-title {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    color: white;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+}
+
+.hero-text {
+    font-size: 1.4rem;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.7);
+}
+
+.hero-button {
+    background-color: #5a8f7c;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+.hero-button:hover {
+    background-color: #3c6355;
+}
+
+.welcome-text {
+    font-size: 1.2rem;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+    line-height: 1.6;
+}
+
+.contact-text {
+    text-align: center;
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+.contact-center {
+    text-align: center;
+    position: relative;
+    text-wrap: none;
+    margin-left: -100px;
+}
