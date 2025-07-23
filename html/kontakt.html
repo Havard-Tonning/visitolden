@@ -25,7 +25,25 @@
 
     <div>
         <img src="../bilder/olden.jpg" class="mainImg">
-        <div class="contactBox">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse tempore dignissimos atque velit hic magni dolorem. Ullam molestiae in facere eius dolorem veritatis hic officiis! Necessitatibus est doloremque odio ad.</div>
+        <div class="contactBox">
+            <form action="https://api.web3forms.com/submit" method="POST" class="contactForm">
+                <input type="hidden" name="access_key" value="4f4f47b5-b5b4-4bf0-a068-8419dcecea37">
+
+                <label for="name" class="form-label">Navn</label><br>
+                <input type="text" name="name" class="form-name" required><br>
+
+                <label for="email" class="form-label">Epost</label><br>              
+                <input type="email" name="email" class="form-email" required><br>
+
+                <label for="message" class="form-label">Melding</label><br>
+                <textarea name="message" class="form-message" required></textarea><br>
+
+                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+                <button type="submit" class="submit-button">Send melding</button>
+
+            </form>
+        </div>
     </div>
 
 </body>

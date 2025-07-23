@@ -416,3 +416,140 @@ h1, h2, h3{
     text-wrap: none;
     margin-left: -100px;
 }
+
+.contactBox{
+    position: absolute;
+    justify-content: center;
+    background-color:#ffffff;
+
+}
+
+.contactForm{
+    position: relative;
+    color: #26322e;
+    font-size: 0.9em;
+    width: 60%;
+}
+
+.contactBox .form-message{
+    height: 100px !important;
+}
+
+.contactBox .form-email, .contactBox .form-name, .contactBox .form-message{
+    width: 300px;
+    border-radius: 5px;
+    border:1px solid #26322e;
+    height: 30px;
+}
+
+.contactBox .submit-button{
+    background-color: #3c6355;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    height: 40px;
+    width: 100px;
+}
+
+.swiper-slide.apt {
+    width: 80% !important; /* Example: make slides 80% width. Adjust as needed. */
+    max-width: 500px; /* Example: Set a maximum width for larger screens */
+    height: 400px; /* Or a fixed height, if you want consistent image sizes */
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper_image.apt { /* Ensure your image covers its slide */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.infoBar{
+    /* background-color: #3c6355; */
+    width: 100%;
+    height: 60px;
+    display: flex;
+    position: absolute;
+}
+
+.infoBar {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    position: absolute;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.infoItem {
+    display: flex;
+    flex: 1;
+    max-width: 200px;
+    min-width: 150px;
+    height: 60px;
+    margin: 0 10px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-radius: 5px;
+    border: #3c6355 2px solid;
+}
+
+.infoItem i {
+    font-size: 1.5em;
+    color: #26322e;
+    margin-right: 8px;
+}
+
+.aptTextBox {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: flex-start;
+    gap: 40px;
+    margin-top: 100px; 
+    padding: 0 25px; 
+    flex-wrap: wrap;
+}
+
+.aptText {
+    flex: 2; 
+    min-width: 300px; 
+}
+
+.aptInfoBox {
+    flex: 1; 
+    background-color: #f5f5f5;
+    padding: 20px;
+    margin-top: 60px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    height: fit-content; 
+    min-width: 250px; /* Ensure info box doesn't get too narrow on smaller screens */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .aptTextBox {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .aptText,
+    .aptInfoBox {
+        flex: none;
+        width: 100%;
+    }
+}
+
+.aptForm{
+    width: 100%;
+}
+
+hr{
+    border:#5a8f7c solid 1px;
+}
