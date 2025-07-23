@@ -525,14 +525,13 @@ h1, h2, h3{
     flex: 1; 
     background-color: #f5f5f5;
     padding: 20px;
-    margin-top: 60px;
+    margin-top: 20px;
     border-radius: 8px;
     border: 1px solid #ddd;
     height: fit-content; 
-    min-width: 250px; /* Ensure info box doesn't get too narrow on smaller screens */
+    min-width: 250px;
 }
 
-/* Responsive design for smaller screens */
 @media (max-width: 768px) {
     .aptTextBox {
         flex-direction: column;
@@ -546,10 +545,161 @@ h1, h2, h3{
     }
 }
 
-.aptForm{
+.aptForm {
     width: 100%;
+    margin: 40px 0;
+    padding: 30px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    border: 1px solid #def5f3;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-hr{
-    border:#5a8f7c solid 1px;
+.aptForm h2 {
+    color: #5a8f7c;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+}
+
+.aptForm hr {
+    border: #5a8f7c solid 1px;
+    margin-bottom: 30px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contactForm {
+    max-width: 600px;
+    margin: 0 auto;
+    color: #26322e;
+    font-size: 1rem;
+}
+
+/* Form Labels */
+.form-label {
+    display: block;
+    color: #3c6355;
+    font-weight: 500;
+    margin-bottom: 8px;
+    margin-top: 20px;
+    font-size: 1.1rem;
+}
+
+.form-label:first-of-type {
+    margin-top: 0;
+}
+
+/* Form Inputs */
+.form-name,
+.form-email,
+.form-date,
+.form-number,
+.form-message {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #def5f3;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: "Raleway", sans-serif;
+    background-color: white;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    box-sizing: border-box;
+}
+
+.form-name:focus,
+.form-email:focus,
+.form-date:focus,
+.form-number:focus,
+.form-message:focus {
+    outline: none;
+    border-color: #5a8f7c;
+    box-shadow: 0 0 0 3px rgba(90, 143, 124, 0.1);
+}
+
+.form-message {
+    height: 120px;
+    resize: vertical;
+    min-height: 80px;
+}
+
+.form-number {
+    max-width: 120px;
+}
+
+.submit-button {
+    background-color: #5a8f7c;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 25px;
+    width: 100%;
+    max-width: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.submit-button:hover {
+    background-color: #3c6355;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(60, 99, 85, 0.3);
+}
+
+.submit-button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 6px rgba(60, 99, 85, 0.3);
+}
+
+
+.form-row {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.form-row .form-group {
+    flex: 1;
+    min-width: 200px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .aptForm {
+        padding: 20px 15px;
+        margin: 20px 0;
+    }
+    
+    .aptForm h2 {
+        font-size: 1.5rem;
+    }
+    
+    .form-row {
+        flex-direction: column;
+        gap: 0;
+    }
+    
+    .submit-button {
+        width: 100%;
+        max-width: none;
+    }
+}
+
+.oMap{
+    width: 100%;
+    margin-top: -20px;
+    height: 500px;
+    border-radius: 8px;
+    margin-bottom: -50px;
 }
