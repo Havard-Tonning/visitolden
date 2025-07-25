@@ -11,7 +11,7 @@
    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/e065bf0659.js" crossorigin="anonymous"></script>
 
-<title>Dobbeleilighet</title>
+<title>Dobbelleilighet</title>
 </head>
 <body>
     <div class="mainHeader">
@@ -63,15 +63,94 @@
     <div class="infoItem"><i class="fa-solid fa-water"></i>&nbsp;Fjordutsikt</div>
     <div class="infoItem"><i class="fa-solid fa-umbrella-beach"></i>&nbsp;Terrasse</div>
     <div class="infoItem"><i class="fa-solid fa-kitchen-set"></i>&nbsp;Kjøkken</div>
+    <div class="infoItem"><i class="fa-solid fa-house"></i>&nbsp;Hele huset alene</div>
+
 </div>
-
-
-
-
     <script src="../../js/aptswiper.js"></script>
 
         <div class="textBox">
+</div>
+
+    <script src="../../js/aptswiper.js"></script>
+
+<div class="aptTextBox">
+    <div class="aptText">
+        <h2>Ekstra rom for hele familien</h2>
+        <p>To sammenkoblede leiligheter med to stuer, bad, kjøkken og soverom. Det er åtte soveplasser på soverom og fire på sovesofa i stuene. Kjøkkene er utstyrt med komfyr, stekeovn, oppvaskmaskin, vannkoker, kaffe-kapselmaskin, presskanne for kaffe og ellers alt en trenger for matlaging. I stuene er det tv og leilighetene har wifi.
+            <br><br>
+            I perioden Mai til September har du som gjest tilgang på oppvarmet svømmebasseng. Bassenget har daglig åpningstid 15:00-20:00 i juli måned, ut over dette etter avtale. Leilighetene og bassengområdet har solrik uteplass med sittegruppe.
+            <br><br>
+            Det er gratis parkering med mulighet for å lade elbil mot avgift. Rolig og flott beliggenhet med nydelig utsikt over Nordfjorden og fjell.
+        <br><br>Verten bor på tomten, i separat hus, med mann og tre jenter.</p>
+    </div>
     
+    <div class="aptInfoBox">
+        <h3>Fasiliteter</h3>
+        <ul>
+            <li>4 enkeltsenger</li>
+            <li>2 dobbeltseng</li>
+            <li>2 sovesofaer</li>
+            <li>Utsikt</li>
+            <li>Stekeovn, kokeplater og oppvaskmaskin</li>
+            <li>Hage</li>
+            <li>TV</li>
+            <li>Vaskemaskin</li>
+            <li>Ladestasjon for elbil</li>
+            <li>Egen inngang</li>
+        </ul>
+</div>
+
+<iframe class="oMap" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyB3A38-HBahOCFrq2acIktVLUPscWHOWT8&q=oldenfjordapartments&maptype=satellite&zoom=12"></iframe>
+
+
+<div class="aptForm">
+    <h2>Ønsker du å booke leiligheten? Kontakt oss, så hjelper vi deg!</h2>
+    <hr>
+    <form action="https://api.web3forms.com/submit" method="POST" class="contactForm">
+        <input type="hidden" name="access_key" value="4f4f47b5-b5b4-4bf0-a068-8419dcecea37">
+        <input type="text" value="Dobbelleilighet" name="bookingtype" hidden>
+
+        <div class="form-group">
+            <label for="name" class="form-label">Navn</label>
+            <input type="text" id="name" name="name" class="form-name" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email" class="form-label">Epost</label>
+            <input type="email" id="email" name="email" class="form-email" required>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group">
+                <label for="from-date" class="form-label">Fra</label>
+                <input type="date" id="from-date" class="form-date" name="from-date" required>
+            </div>
+            <div class="form-group">
+                <label for="to-date" class="form-label">Til</label>
+                <input type="date" id="to-date" class="form-date" name="to-date" required>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group">
+                <label for="adults" class="form-label">Antall voksne</label>
+                <input type="number" id="adults" name="adults" class="form-number" min="1" required>
+            </div>
+            <div class="form-group">
+                <label for="kids" class="form-label">Antall barn (angi alder i kommentar)</label>
+                <input type="number" id="kids" name="kids" class="form-number" min="0">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="message" class="form-label">Melding</label>
+            <textarea id="message" name="message" class="form-message" placeholder="Fortell oss om ditt opphold, spesielle ønsker, og eventuelt alder på barn"></textarea>
+        </div>
+
+        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+        <button type="submit" class="submit-button">Send melding</button>
+    </form>
+</div>
 
 </div>
 
