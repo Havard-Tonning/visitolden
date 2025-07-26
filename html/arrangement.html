@@ -28,23 +28,77 @@
     <h1 class="pageHeader">Arrangement</h1>
 
     <!-- Slider main container -->
-<div class="swiper">
+<div class="swiper apt">
     <!-- Additional required wrapper -->
     <div class="swiper-wrapper">
       <!-- Slides -->
-      <div class="swiper-slide"><img class="swiper_image" src="../bilder/ph.jpg"></div>
-      <div class="swiper-slide"><img class="swiper_image" src="../bilder/ph.jpg"></div>
-      <div class="swiper-slide"><img class="swiper_image" src="../bilder/ph.jpg"></div>
+      <div class="swiper-slide apt"><img class="swiper_image apt" src="../bilder/placeholder1.jpg"></div>
+      <div class="swiper-slide apt"><img class="swiper_image apt" src="../bilder/placeholder2.jpg"></div>
+      <div class="swiper-slide apt"><img class="swiper_image apt" src="../bilder/placeholder3.jpg"></div>
+      <div class="swiper-slide apt"><img class="swiper_image apt" src="../bilder/placeholder1.jpg"></div>
+      <div class="swiper-slide apt"><img class="swiper_image apt" src="../bilder/placeholder2.jpg"></div>
+      <div class="swiper-slide apt"><img class="swiper_image apt" src="../bilder/placeholder3.jpg"></div>
+      <div class="swiper-slide apt"><img class="swiper_image apt" src="../bilder/placeholder1.jpg"></div>
+      <div class="swiper-slide apt"><img class="swiper_image apt" src="../bilder/placeholder2.jpg"></div>
+      <div class="swiper-slide apt"><img class="swiper_image apt" src="../bilder/placeholder3.jpg"></div>
 
     </div>
     <div class="swiper-button-prev"></div>
     <div class="swiper-button-next"></div>
   </div>
 
-    <script src="../js/swiper.js"></script>
+    <script src="../js/aptswiper.js"></script>
     <div class="textBox">
 <h2>Perfekt lokale, uansett anledning</h2>
 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur rem id sequi voluptas iste eaque temporibus dolorem velit nisi, nihil atque error aut expedita, minus laboriosam cum cumque minima culpa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum ut vitae sequi ad. Distinctio qui repudiandae et ea ut sed nemo dignissimos, quos, eveniet sequi consectetur laborum, tempore corrupti nam! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias necessitatibus dolorum libero sed soluta animi doloribus perferendis eaque, id et doloremque quae veritatis! Incidunt, iste eos fugiat error vero vel. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste amet sint quos distinctio reprehenderit rem id laborum sed est asperiores illo ex, velit ut dolore praesentium, voluptate eum nihil fuga!</p>
+
+<div class="aptForm">
+    <h2>Ta kontakt, så sørger vi for at den spesielle dagen blir perfekt!</h2>
+    <hr>
+    <form action="https://api.web3forms.com/submit" method="POST" class="contactForm">
+        <input type="hidden" name="access_key" value="4f4f47b5-b5b4-4bf0-a068-8419dcecea37">
+        <input type="text" value="Arrangement" name="bookingtype" hidden>
+
+        <div class="form-group">
+            <label for="name" class="form-label">Navn</label>
+            <input type="text" id="name" name="name" class="form-name" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email" class="form-label">Epost</label>
+            <input type="email" id="email" name="email" class="form-email" required>
+        </div>
+
+        <div class="form-group">
+            <label for="phone" class="form-label">Telefon</label>
+            <input type="phone" id="phone" name="phone" class="form-phone" required>
+        </div>
+
+        <div class="form-group">
+            <label for="event" class="form-label">Type arrangement</label>
+            <input type="text" id="event" name="event" class="form-event" required>
+        </div>
+
+        <div class="form-group">
+            <label for="from-date" class="form-label">Dato</label>
+            <input type="date" id="from-date" class="form-date" name="from-date" required>
+        </div>
+
+        <div class="form-group">
+            <label for="adults" class="form-label">Antall gjester</label>
+            <input type="number" id="adults" name="adults" class="form-number" min="1" required>
+        </div>
+
+        <div class="form-group">
+            <label for="message" class="form-label">Melding</label>
+            <textarea id="message" name="message" class="form-message" placeholder="Fortell oss mer om arrangementet du ønsker å holde"></textarea>
+        </div>
+
+        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+        <button type="submit" class="submit-button">Send melding</button>
+    </form>
+</div>
+
 
 </div>
 </body>
