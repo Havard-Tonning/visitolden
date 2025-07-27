@@ -6,6 +6,8 @@ body, html, head{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    width: 100vw;
+    overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
 .logo{
@@ -132,12 +134,13 @@ nav{
     padding: 20px;
     font-family: "Dosis", sans-serif;
     font-weight: 200;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 :root {
   --swiper-navigation-color: #3c6355;
 }
-
 
 .section-header {
     width: 100%;
@@ -160,6 +163,8 @@ nav{
     flex-wrap: wrap;
     gap: 20px;
     padding: 0 20px 25px 20px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .subContainer{
@@ -171,7 +176,6 @@ nav{
     text-decoration: none;
     color: black;
     margin-bottom: 20px;
-    
 }
 
 .subSubContainer{
@@ -326,14 +330,14 @@ h1, h2, h3{
 
  .textBox{
     margin: 20px;
+    width: calc(100% - 40px);
+    box-sizing: border-box;
  }
 
  .placeMap{
     width: 100%;
     height: 400px;
-
  }
-
 
 .hero-section {
     position: relative;
@@ -420,7 +424,6 @@ h1, h2, h3{
     position: absolute;
     justify-content: center;
     background-color:#ffffff;
-
 }
 
 .contactForm{
@@ -451,16 +454,16 @@ h1, h2, h3{
 }
 
 .swiper-slide.apt {
-    width: 80% !important; /* Example: make slides 80% width. Adjust as needed. */
-    max-width: 500px; /* Example: Set a maximum width for larger screens */
-    height: 400px; /* Or a fixed height, if you want consistent image sizes */
+    width: 80% !important;
+    max-width: 500px;
+    height: 400px;
     background: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.swiper_image.apt { /* Ensure your image covers its slide */
+.swiper_image.apt {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -480,7 +483,6 @@ h1, h2, h3{
 }
 
 .infoBar{
-    /* background-color: #3c6355; */
     width: 100%;
     height: 60px;
     display: flex;
@@ -565,6 +567,7 @@ h1, h2, h3{
     border-radius: 10px;
     border: 1px solid #def5f3;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
 }
 
 .aptForm h2 {
@@ -672,7 +675,6 @@ h1, h2, h3{
     box-shadow: 0 2px 6px rgba(60, 99, 85, 0.3);
 }
 
-
 .form-row {
     display: flex;
     gap: 20px;
@@ -719,120 +721,351 @@ h1, h2, h3{
 }
 
 .menu-section {
-margin: 40px 20px;
-background-color: #f9f9f9;
-border-radius: 10px;
-padding: 30px;
-border: 1px solid #def5f3;
-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 40px 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 30px;
+    border: 1px solid #def5f3;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .menu-category {
-margin-bottom: 40px;
+    margin-bottom: 40px;
 }
 
 .menu-category:last-child {
-margin-bottom: 0;
+    margin-bottom: 0;
 }
 
 .menu-category h3 {
-color: #5a8f7c;
-font-size: 1.8rem;
-margin-bottom: 20px;
-border-bottom: 2px solid #def5f3;
-padding-bottom: 10px;
+    color: #5a8f7c;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #def5f3;
+    padding-bottom: 10px;
 }
 
 .menu-item {
-display: flex;
-justify-content: space-between;
-align-items: flex-start;
-margin-bottom: 20px;
-padding-bottom: 15px;
-border-bottom: 1px solid #e8e8e8;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e8e8e8;
 }
 
 .menu-item:last-child {
-border-bottom: none;
-margin-bottom: 0;
+    border-bottom: none;
+    margin-bottom: 0;
 }
 
 .menu-item-content {
-flex: 1;
-margin-right: 15px;
+    flex: 1;
+    margin-right: 15px;
 }
 
 .menu-item-name {
-font-weight: 600;
-color: #3c6355;
-font-size: 1.1rem;
-margin-bottom: 5px;
+    font-weight: 600;
+    color: #3c6355;
+    font-size: 1.1rem;
+    margin-bottom: 5px;
 }
 
 .menu-item-description {
-color: #666;
-font-size: 0.9rem;
-line-height: 1.4;
+    color: #666;
+    font-size: 0.9rem;
+    line-height: 1.4;
 }
 
 .menu-item-price {
-color: #5a8f7c;
-font-weight: 600;
-font-size: 1.1rem;
-white-space: nowrap;
+    color: #5a8f7c;
+    font-weight: 600;
+    font-size: 1.1rem;
+    white-space: nowrap;
 }
 
 .menu-variations {
-margin-top: 8px;
-font-size: 0.85rem;
-color: #888;
+    margin-top: 8px;
+    font-size: 0.85rem;
+    color: #888;
 }
 
 .menu-variations div {
-margin-bottom: 2px;
+    margin-bottom: 2px;
 }
 
 .menu-note {
-background-color: #def5f3;
-padding: 15px;
-border-radius: 8px;
-margin-top: 20px;
-font-size: 0.9rem;
-color: #3c6355;
-border-left: 4px solid #5a8f7c;
+    background-color: #def5f3;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #3c6355;
+    border-left: 4px solid #5a8f7c;
 }
 
 .dietary-tags {
-display: inline-flex;
-gap: 5px;
-margin-left: 10px;
+    display: inline-flex;
+    gap: 5px;
+    margin-left: 10px;
 }
 
 .dietary-tag {
-background-color: #5a8f7c;
-color: white;
-font-size: 0.7rem;
-padding: 2px 6px;
-border-radius: 3px;
-font-weight: 500;
+    background-color: #5a8f7c;
+    color: white;
+    font-size: 0.7rem;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-weight: 500;
 }
 
 @media (max-width: 768px) {
-.menu-item {
+    .menu-item {
+        flex-direction: column;
+    }
+
+    .menu-item-content {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .menu-item-price {
+        align-self: flex-start;
+    }
+
+    .menu-section {
+        margin: 20px 10px;
+        padding: 20px;
+    }
+}
+
+/* Hamburger menu button styling */
+.hamburger {
+    display: none;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1200;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: #26322e;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.menu-item-content {
-    margin-right: 0;
-    margin-bottom: 10px;
+/* Hamburger menu bars */
+.hamburger .bar {
+    display: block;
+    width: 28px; 
+    height: 3px;
+    margin: 3px 0;
+    background: #26322e;
+    border-radius: 2px;
+    transition: 0.4s;
 }
 
-.menu-item-price {
-    align-self: flex-start;
+/* Hamburger active effect */
+.hamburger.active .bar:nth-child(2) { 
+    opacity: 0; 
+}
+.hamburger.active .bar:nth-child(1) { 
+    transform: translateY(9px) rotate(45deg); 
+}
+.hamburger.active .bar:nth-child(3) { 
+    transform: translateY(-9px) rotate(-45deg); 
 }
 
-.menu-section {
-    margin: 20px 10px;
-    padding: 20px;
+/* Responsive nav */
+@media (max-width: 992px) {
+    nav {
+        width: 95%;
+    }
 }
+
+@media (max-width: 768px) {
+    /* Reset body and html to ensure full width */
+    body, html {
+        width: 100vw;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+    
+    /* Header adjustments */
+    .mainHeader {
+        height: 75px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        width: 100%;
+        padding: 0 70px 0 20px;
+        box-sizing: border-box;
+    }
+    
+    .logo {
+        font-size: 1.8rem;
+        text-align: center;
+        flex: 1;
+        transform: translateY(25%);
+    }
+    
+    /* Show hamburger menu */
+    .hamburger {
+        display: flex;
+    }
+    /* Hide regular nav and show mobile nav */
+    nav {
+        display: none;
+        position: absolute;
+        top: 75px;
+        left: 0;
+        right: 0;
+        width: 100%;
+        background: white;
+        flex-direction: column;
+        gap: 0;
+        box-shadow: 0 8px 16px rgba(90,143,124,0.15);
+        z-index: 1100;
+    }
+    
+    nav.open {
+        display: flex;
+    }
+    
+    .linkBox {
+        margin-top: 0 !important;
+        border-radius: 0;
+        border: none;
+        border-bottom: 1px solid #def5f3;
+        padding: 18px 20px;
+        font-size: 1.2rem;
+        text-align: left;
+        width: 100%;
+        background: none;
+        justify-content: flex-start;
+        transition: none;
+        transform: scale(1) !important;
+        box-sizing: border-box;
+        height: auto;
+    }
+    
+    .linkBox:hover {
+        transform: scale(1) !important;
+        background-color: #def5f3;
+        border-radius: 0;
+    }
+    
+    /* Content adjustments */
+    .content-wrapper {
+        padding: 15px;
+        width: 100%;
+    }
+    
+    .textBox {
+        margin: 15px;
+        width: calc(100% - 30px);
+    }
+    
+    .section-header {
+        padding-left: 15px;
+        font-size: 1.5rem;
+    }
+
+    .oImgLeft{
+        margin-top: -20px;
+    }
+
+    .swiper{
+        border-radius: 4px;
+    }
+
+    .oImgRight{
+        position: absolute;
+        margin-bottom: -20px !important;
+    }
+    
+    .mainContainer {
+        padding: 0 15px 20px 15px;
+    }
+    
+    .subContainer {
+        width: 100%;
+        min-width: unset;
+        margin-bottom: 20px;
+    }
+
+    a.infoBox{
+        margin-bottom: 20px;
+    }
+
+    .oListRight, .oListLeft{
+        margin-left: 20px;
+    }
+    
+    /* Hero section adjustments */
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .hero-text {
+        font-size: 1.2rem;
+    }
+    
+    .hero-content {
+        padding: 15px;
+    }
+    
+    /* oMainContainer mobile adjustments */
+    .oMainContainer {
+        width: 95%;
+        margin-left: 2.5%;
+        height: auto;
+        flex-direction: column;
+        padding: 20px 0;
+    }
+    
+    .oImgLeft, .oImgRight {
+        position: relative;
+        width: 100%;
+        height: 300px;
+        margin-bottom: 20px;
+    }
+    
+    .oListLeft, .oListRight {
+        position: relative;
+        left: auto;
+        right: auto;
+        width: 100%;
+        padding: 0 20px;
+    }
+    
+    .infoBox {
+        position: relative;
+        display: inline-block;
+        margin-top: 15px;
+        padding: 12px 25px;
+        font-size: 1.2rem;
+    }
+    
+    /* Contact center fix */
+    .contact-center {
+        margin-left: 0;
+        text-align: center;
+    }
+    
+    /* Ensure all containers use full width */
+    .welcome-text {
+        padding: 0 15px;
+        margin: 0 auto 30px auto;
+    }
+    
+    .contact-text {
+        padding: 0 15px;
+    }
 }
