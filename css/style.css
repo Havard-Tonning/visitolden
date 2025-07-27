@@ -557,6 +557,24 @@ h1, h2, h3{
         flex: none;
         width: 100%;
     }
+
+ .infoBar {
+        display: none;
+        margin: 0;
+        padding: 0;
+        height: 0;
+    }
+
+    .infoItem{
+        display: none;
+        margin: 0;
+        padding: 0;
+        height: 0;
+    }
+
+    .aptTextBox{
+        margin-top: 0;
+    }
 }
 
 .aptForm {
