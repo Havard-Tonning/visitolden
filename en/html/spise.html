@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <script src="../js/script.js"></script>
+    <title>Restaurants</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="https://kit.fontawesome.com/e065bf0659.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+    <div class="mainHeader">
+        <div class="languages">
+            <a href="#" class="language active">En</a>
+            <a href="../../html/spise.html" class="language">No</a>
+        </div>
+        <a href="../index.html">
+            <h1 class="logo">Visit Olden</h1>
+        </a>
+        <button class="hamburger" aria-label="Meny" aria-expanded="false">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+        <nav>
+            <a href="../index.html" class="linkBox">Home</a>
+            <a href="overnatting.html" class="linkBox">Accomodation</a>
+            <a href="arrangement.html" class="linkBox">Events</a>
+            <a href="butikker.html" class="linkBox">Stores</a>
+            <a href="spise.html" class="linkBox active">Restaurants</a>
+            <a href="todo.html" class="linkBox">Things to do</a>
+            <a href="kontakt.html" class="linkBox">Contact</a>
+        </nav>
+    </div>
+
+
+    <div class="content-wrapper">
+        <H1>Restaurants</H1>
+
+        <div class="mainContainer">
+            <a class="subContainer" href="./restauranter/fjordhotel.html">
+                <div class="subSubContainer">
+                    <img src="../bilder/ofj1.jpg" class="containerImg food">
+                    <ul class="hoverInfo">
+                        <li>Buffet with meat, fish, soup, salad and desserts</li>
+                        <li>Open for everyone, each day from 19:00 to 22:00</li>
+                        <li>450kr per person</li>
+                    </ul>
+                </div>
+                <div class="containerHeader">Olden Fjordhotel</div>
+                <div class="tripleSubContainer">Learn more</div>
+            </a>
+
+            <a class="subContainer" href="./restauranter/hoven.html">
+                <div class="subSubContainer">
+                    <img src="../bilder/hoven.jpg" class="containerImg food">
+                    <ul class="hoverInfo">
+                        <li>Burger, pizza, fish, steak</li>
+                        <li>Opening hours vary by season</li>
+                        <li>Requires the cable car or a hike to get up</li>
+                    </ul>
+                </div>
+                <div class="containerHeader">Hoven Restaurant</div>
+                <div class="tripleSubContainer">Learn more</div>
+            </a>
+
+            <a class="subContainer" href="./restauranter/molla.html">
+                <div class="subSubContainer">
+                    <img src="../bilder/molla2.jpg" class="containerImg food">
+                    <ul class="hoverInfo">
+                        <li>Pizza, burger and fresh seafood</li>
+                        <li>Opening hours vary by season</li>
+                        <li>Seating both inside and outside</li>
+                        <li>Right by the fjord</li>
+                    </ul>
+                </div>
+                <div class="containerHeader">Mølla Gjestehus</div>
+                <div class="tripleSubContainer">Learn more</div>
+            </a>
+
+            <a class="subContainer" href="./restauranter/sunde.html">
+                <div class="subSubContainer">
+                    <img src="../bilder/sunde2.jpg" class="containerImg food">
+                    <ul class="hoverInfo">
+                        <li>Street food with burger, fries and hot dogs</li>
+                        <li>Also asian dishes, like wok and spring rolls</li>
+                        <li>Open 11:00-19:00 weekdays</li>
+                        <li>12:00-21:00 weekends</li>
+                    </ul>
+                </div>
+                <div class="containerHeader">Sundekiosken</div>
+                <div class="tripleSubContainer">Learn more</div>
+            </a>
+
+            <a class="subContainer" href="./restauranter/singermat.html">
+                <div class="subSubContainer">
+                    <img src="../bilder/singer-food.jpg" class="containerImg food">
+                    <ul class="hoverInfo">
+                        <li>Afternoon tea with homemade cakes, scones and buns</li>
+                        <li>13:00 og 15:00 Wednesday to Sunday</li>
+                        <li>In authentic, historical surroundings</li>
+                    </ul>
+                </div>
+                <div class="containerHeader">Singerheimen</div>
+                <div class="tripleSubContainer">Learn more</div>
+            </a>
+
+            <a class="subContainer" href="./restauranter/stabukk.html">
+                <div class="subSubContainer">
+                    <img src="../bilder/stabukk3.jpg" class="containerImg food">
+                    <ul class="hoverInfo">
+                        <li>Café with ice cream, soft serves, shakes, slushies and pastries</li>
+                        <li>Seating outside in the sun</li>
+                        <li>Open 10:00 - 16:00</li>
+                    </ul>
+                </div>
+                <div class="containerHeader">Stabukk</div>
+                <div class="tripleSubContainer">Learn more</div>
+            </a>
+
+            <a class="subContainer" href="./restauranter/yris.html">
+                <div class="subSubContainer">
+                    <img src="../bilder/yris1.jpg" class="containerImg food">
+                    <ul class="hoverInfo">
+                        <li>Café with coffe and cakes, along with pizza, lasagna and fish</li>
+                        <li>Seating both inside and outside</li>
+                        <li>Open 10:00 - 20:00</li>
+                    </ul>
+                </div>
+                <div class="containerHeader">Yris Café</div>
+                <div class="tripleSubContainer">Learn more</div>
+            </a>
+        </div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js"></script>
+    <script src="../js/swiper.js"></script>
+    <script src="../js/mat.js"></script>
+</body>
+
+</html>

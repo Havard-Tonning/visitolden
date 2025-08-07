@@ -1,22 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css"> 
-       <link rel="preconnect" href="https://fonts.googleapis.com"> 
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <script src="../js/script.js"></script>
-<title>Spisesteder</title>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <title>Spisesteder</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
     <script src="https://kit.fontawesome.com/e065bf0659.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
+
 <body>
     <div class="mainHeader">
-                <a href="../index.html"><h1 class="logo">Visit Olden</h1></a>        <button class="hamburger" aria-label="Meny" aria-expanded="false">
+        <div class="languages">
+            <a href="../en/html/spise.html" class="language">En</a>
+            <a href="#" class="language active">No</a>
+        </div>
+        <a href="../index.html">
+            <h1 class="logo">Visit Olden</h1>
+        </a> <button class="hamburger" aria-label="Meny" aria-expanded="false">
             <span class="bar"></span>
             <span class="bar"></span>
             <span class="bar"></span>
@@ -33,17 +44,17 @@
     </div>
 
 
-    <div class="content-wrapper">  
+    <div class="content-wrapper">
         <H1>Spisesteder</H1>
-        
+
         <div class="mainContainer">
             <a class="subContainer" href="./restauranter/fjordhotel.html">
                 <div class="subSubContainer">
-                    <img src="../bilder/ofj1.jpg" class="containerImg food"> 
+                    <img src="../bilder/ofj1.jpg" class="containerImg food">
                     <ul class="hoverInfo">
-                        <li>Buffet med blant annet kjøtt, fisk, suppe, salat og dessert</li> 
+                        <li>Buffet med blant annet kjøtt, fisk, suppe, salat og dessert</li>
                         <li>Åpen for alle hver dag 19:00 til 22:00</li>
-                        <li>450kr per person</li>   
+                        <li>450kr per person</li>
                     </ul>
                 </div>
                 <div class="containerHeader">Olden Fjordhotel</div>
@@ -52,25 +63,25 @@
 
             <a class="subContainer" href="./restauranter/hoven.html">
                 <div class="subSubContainer">
-                    <img src="../bilder/hoven.jpg" class="containerImg food"> 
+                    <img src="../bilder/hoven.jpg" class="containerImg food">
                     <ul class="hoverInfo">
                         <li>Burger, pizza, fisk, biff</li>
                         <li>Åpningstid kommer an på sesong</li>
-                        <li>Krever gondolbana for å komme seg opp</li>   
+                        <li>Krever gondolbana for å komme seg opp</li>
                     </ul>
                 </div>
                 <div class="containerHeader">Hoven Restaurant</div>
                 <div class="tripleSubContainer">Lær mer</div>
             </a>
-                
+
             <a class="subContainer" href="./restauranter/molla.html">
                 <div class="subSubContainer">
-                    <img src="../bilder/molla2.jpg" class="containerImg food"> 
+                    <img src="../bilder/molla2.jpg" class="containerImg food">
                     <ul class="hoverInfo">
-                        <li>Pizza, burger og fersk sjømat</li> 
+                        <li>Pizza, burger og fersk sjømat</li>
                         <li>Åpningstidene varierer basert på sesong</li>
-                        <li>Sitteplasser både inne og ute</li>  
-                        <li>Rett ved fjorden</li> 
+                        <li>Sitteplasser både inne og ute</li>
+                        <li>Rett ved fjorden</li>
                     </ul>
                 </div>
                 <div class="containerHeader">Mølla Gjestehus</div>
@@ -79,9 +90,9 @@
 
             <a class="subContainer" href="./restauranter/sunde.html">
                 <div class="subSubContainer">
-                    <img src="../bilder/sunde2.jpg" class="containerImg food"> 
+                    <img src="../bilder/sunde2.jpg" class="containerImg food">
                     <ul class="hoverInfo">
-                        <li>Gatekjøkken med burger, fries, løvstek, pølse</li> 
+                        <li>Gatekjøkken med burger, fries, løvstek, pølse</li>
                         <li>Også asiatiske retter, som wok og vårruller</li>
                         <li>Åpent 11:00-19:00 hverdager</li>
                         <li>12:00-21:00 i helgene</li>
@@ -90,12 +101,12 @@
                 <div class="containerHeader">Sundekiosken</div>
                 <div class="tripleSubContainer">Lær mer</div>
             </a>
-                
+
             <a class="subContainer" href="./restauranter/singermat.html">
                 <div class="subSubContainer">
-                    <img src="../bilder/singer-food.jpg" class="containerImg food"> 
+                    <img src="../bilder/singer-food.jpg" class="containerImg food">
                     <ul class="hoverInfo">
-                        <li>Afternoon tea med hjemmelagde kaker, scones og rundstykker</li> 
+                        <li>Afternoon tea med hjemmelagde kaker, scones og rundstykker</li>
                         <li>13:00 og 15:00 onsdag til søndag</li>
                         <li>I autentiske, historiske omgivelser </li>
                     </ul>
@@ -106,9 +117,9 @@
 
             <a class="subContainer" href="./restauranter/stabukk.html">
                 <div class="subSubContainer">
-                    <img src="../bilder/stabukk3.jpg" class="containerImg food"> 
+                    <img src="../bilder/stabukk3.jpg" class="containerImg food">
                     <ul class="hoverInfo">
-                        <li>Kafé med kuleis, softis, shakes, slush og bakverk</li> 
+                        <li>Kafé med kuleis, softis, shakes, slush og bakverk</li>
                         <li>Sitteplasser ute i sola</li>
                         <li>Åpent 10:00 - 16:00</li>
                     </ul>
@@ -116,12 +127,12 @@
                 <div class="containerHeader">Stabukk</div>
                 <div class="tripleSubContainer">Lær mer</div>
             </a>
-                
+
             <a class="subContainer" href="./restauranter/yris.html">
                 <div class="subSubContainer">
-                    <img src="../bilder/yris1.jpg" class="containerImg food"> 
+                    <img src="../bilder/yris1.jpg" class="containerImg food">
                     <ul class="hoverInfo">
-                        <li>Kafé med kaffi og kaker, samt løvstek, fisk og pizza</li> 
+                        <li>Kafé med kaffi og kaker, samt løvstek, fisk og pizza</li>
                         <li>Sitteplasser både inne og ute</li>
                         <li>Åpent 10:00 - 20:00 </li>
                     </ul>
@@ -138,4 +149,5 @@
     <script src="../js/swiper.js"></script>
     <script src="../js/mat.js"></script>
 </body>
+
 </html>

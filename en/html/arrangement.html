@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <script src="../js/script.js"></script>
+    <title>Arrangement</title>
+</head>
+
+<body>
+    <div class="mainHeader">
+        <div class="languages">
+            <a href="#" class="language active">En</a>
+            <a href="../../html/arrangement.html" class="language">No</a>
+        </div>
+        <a href="../index.html">
+            <h1 class="logo">Visit Olden</h1>
+        </a> <button class="hamburger" aria-label="Meny" aria-expanded="false">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+        <nav>
+            <a href="../index.html" class="linkBox">Hjem</a>
+            <a href="overnatting.html" class="linkBox">Overnatting</a>
+            <a href="arrangement.html" class="linkBox active">Arrangement</a>
+            <a href="butikker.html" class="linkBox">Butikker</a>
+            <a href="spise.html" class="linkBox">Spisesteder</a>
+            <a href="todo.html" class="linkBox">Ting å gjøre</a>
+            <a href="kontakt.html" class="linkBox">Kontakt</a>
+        </nav>
+    </div>
+
+    <h1 class="pageHeader">Arrangement</h1>
+
+    <!-- Slider main container -->
+    <div class="swiper apt">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide apt"><img class="swiper_image apt" src="../bilder/event1.jpg"></div>
+            <div class="swiper-slide apt"><img class="swiper_image apt" src="../bilder/event2.jpg"></div>
+            <div class="swiper-slide apt"><img class="swiper_image apt" src="../bilder/event3.jpg"></div>
+            <div class="swiper-slide apt"><img class="swiper_image apt" src="../bilder/event4.jpg"></div>
+            <div class="swiper-slide apt"><img class="swiper_image apt" src="../bilder/event5.jpg"></div>
+            <div class="swiper-slide apt"><img class="swiper_image apt" src="../bilder/event6.jpg"></div>
+            <div class="swiper-slide apt"><img class="swiper_image apt" src="../bilder/event7.jpg"></div>
+            <div class="swiper-slide apt"><img class="swiper_image apt" src="../bilder/event8.jpg"></div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+
+    <script src="../js/aptswiper.js"></script>
+    <div class="textBox">
+        <h2>Perfekt lokale, uansett anledning</h2>
+        <p>Do you dream of celebrating a special occasion in idyllic surroundings with a view of the fjord? Then we have
+            exactly what you are looking for. Whether it is a birthday, a wedding, a concert, or something completely
+            different, we will make it happen. <br><br>
+            We have tables and tableware with space for up to 70 people. The tent ensures that the event runs smoothly
+            regardless of the weather. <br><br>
+            The nearby apartments sleep 18 and provide an ideal opportunity to retreat and get a good night's sleep
+            after the festivities.
+        </p>
+
+        <div class="aptForm">
+            <h2>Contacct us, and we ensure that the special day will be unforgettable</h2>
+            <hr>
+            <form action="https://api.web3forms.com/submit" method="POST" class="contactForm">
+                <input type="hidden" name="access_key" value="4f4f47b5-b5b4-4bf0-a068-8419dcecea37">
+                <input type="text" value="Arrangement" name="bookingtype" hidden>
+
+                <div class="form-group">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" id="name" name="name" class="form-name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" id="email" name="email" class="form-email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone" class="form-label">Phone</label>
+                    <input type="phone" id="phone" name="phone" class="form-phone" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="event" class="form-label">Kind of event</label>
+                    <input type="text" id="event" name="event" class="form-event" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="from-date" class="form-label">Date</label>
+                    <input type="date" id="from-date" class="form-date" name="from-date" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="adults" class="form-label">Number of guests</label>
+                    <input type="number" id="adults" name="adults" class="form-number" min="1" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea id="message" name="message" class="form-message"
+                        placeholder="Tell us more about the event you want to host"></textarea>
+                </div>
+
+                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                <button type="submit" class="submit-button">Send message</button>
+            </form>
+        </div>
+
+
+    </div>
+</body>
+
+</html>

@@ -1,25 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css"> 
-       <link rel="preconnect" href="https://fonts.googleapis.com"> 
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <script src="../js/script.js"></script>
-<title>Butikker</title>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <title>Butikker</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
     <script src="https://kit.fontawesome.com/e065bf0659.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-        <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB3A38-HBahOCFrq2acIktVLUPscWHOWT8&callback=console.debug&libraries=maps,marker&v=beta">
+    <script async
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB3A38-HBahOCFrq2acIktVLUPscWHOWT8&callback=console.debug&libraries=maps,marker&v=beta">
     </script>
 
 </head>
+
 <body>
     <div class="mainHeader">
-                <a href="../index.html"><h1 class="logo">Visit Olden</h1></a>        <button class="hamburger" aria-label="Meny" aria-expanded="false">
+        <div class="languages">
+            <a href="../en/html/butikker.html" class="language">En</a>
+            <a href="#" class="language active">No</a>
+        </div>
+        <a href="../index.html">
+            <h1 class="logo">Visit Olden</h1>
+        </a> <button class="hamburger" aria-label="Meny" aria-expanded="false">
             <span class="bar"></span>
             <span class="bar"></span>
             <span class="bar"></span>
@@ -35,16 +47,16 @@
         </nav>
     </div>
 
-      <div class="content-wrapper">        
+    <div class="content-wrapper">
         <h3 class="section-header">Matbutikker</h3>
         <div class="mainContainer">
             <a class="subContainer" href="./butikker/bunnpris.html">
                 <div class="subSubContainer">
-                    <img src="../bilder/bunnpris.jpg" class="containerImg food"> 
+                    <img src="../bilder/bunnpris.jpg" class="containerImg food">
                     <ul class="hoverInfo">
-                        <li>Den største matbutikken i bygda</li> 
+                        <li>Den største matbutikken i bygda</li>
                         <li>Bredt utvalg av varer, inkludert varmmat i løsvekt fra grillen</li>
-                        <li>Åpent mandag-lørdag 07:00-20:00</li>   
+                        <li>Åpent mandag-lørdag 07:00-20:00</li>
                         <li>Åpent søndag 10:00-18:00</li>
                     </ul>
                 </div>
@@ -54,24 +66,24 @@
 
             <a class="subContainer" href="./butikker/coop.html">
                 <div class="subSubContainer">
-                    <img src="../bilder/coop.jpg" class="containerImg food"> 
+                    <img src="../bilder/coop.jpg" class="containerImg food">
                     <ul class="hoverInfo">
                         <li>Matbutikk som også har post-i-butikk og suvenirer</li>
                         <li>Åpent mandag-lørdag 09:00-19:00</li>
-                        <li>Åpent søndag 11:00-17:00</li>   
+                        <li>Åpent søndag 11:00-17:00</li>
                     </ul>
                 </div>
                 <div class="containerHeader">Coop Marked</div>
                 <div class="tripleSubContainer">Lær mer</div>
             </a>
         </div>
-        
+
         <h3 class="section-header">Klesbutikker</h3>
         <div class="mainContainer">
-                        <a class="subContainer" href="./butikker/riccovero.html">
+            <a class="subContainer" href="./butikker/riccovero.html">
                 <div class="subSubContainer">
-                    <img src="../bilder/riccovero.jpg" class="containerImg food"> 
-                    <ul class="hoverInfo"> 
+                    <img src="../bilder/riccovero.jpg" class="containerImg food">
+                    <ul class="hoverInfo">
                         <li>Et lokalt motemerke startet i 1936</li>
                         <li>Skjorter, kjoler, dress, sko, og ellers alt som trengs for en smart look</li>
                         <li>Åpent mandag-frdag 09:00-18:00</li>
@@ -85,11 +97,11 @@
 
             <a class="subContainer" href="./butikker/skogstad.html">
                 <div class="subSubContainer">
-                    <img src="../bilder/skogstad.jpg" class="containerImg food"> 
+                    <img src="../bilder/skogstad.jpg" class="containerImg food">
                     <ul class="hoverInfo">
                         <li>Lokalt merke annerkjent for kvalitetsklær til sport og friluftsliv</li>
                         <li>Outlet vegg-i-vegg</li>
-                        <li>Åpent mandag-fredag 10:00-17:00</li>   
+                        <li>Åpent mandag-fredag 10:00-17:00</li>
                         <li>Åpent lørdag 10:00-18:00</li>
                         <li>Åpent søndag 12:00-16:00</li>
                     </ul>
@@ -100,7 +112,7 @@
 
             <a class="subContainer" href="./butikker/outlet.html">
                 <div class="subSubContainer">
-                    <img src="../bilder/outlet.jpg" class="containerImg food"> 
+                    <img src="../bilder/outlet.jpg" class="containerImg food">
                     <ul class="hoverInfo">
                         <li>En rekke merkevarer innen sport og friluftsliv til outletpriser</li>
                         <li>Åpent mandag-lørdag 09:00-18:00</li>
@@ -110,12 +122,12 @@
                 <div class="tripleSubContainer">Lær mer</div>
             </a>
         </div>
-        
+
         <h3 class="section-header">Suvenirer</h3>
         <div class="mainContainer">
             <a class="subContainer" href="./butikker/ljos.html">
                 <div class="subSubContainer">
-                    <img src="../bilder/ljos.jpg" class="containerImg food"> 
+                    <img src="../bilder/ljos.jpg" class="containerImg food">
                     <ul class="hoverInfo">
                         <li>En koselig liten butikk med postkost, plakater og duftlys</li>
                         <li>Åpent på dager det er cruiseskip</li>
@@ -127,7 +139,7 @@
 
             <a class="subContainer" href="./butikker/viking.html">
                 <div class="subSubContainer">
-                    <img src="../bilder/viking.jpg" class="containerImg food"> 
+                    <img src="../bilder/viking.jpg" class="containerImg food">
                     <ul class="hoverInfo">
                         <li>Som navnet tilsier, er det mange replikaer av vikingutstyr</li>
                         <li>De har også håndlagde artikler, som julekuler og treskjæringer</li>
@@ -140,7 +152,7 @@
 
             <a class="subContainer" href="./butikker/fjordsuvenir.html">
                 <div class="subSubContainer">
-                    <img src="../bilder/fjordsuvenir.jpg" class="containerImg food"> 
+                    <img src="../bilder/fjordsuvenir.jpg" class="containerImg food">
                     <ul class="hoverInfo">
                         <li>Den største suvenirbutikken i Olden</li>
                         <li>Alt fra vikinghjelmer til skjeer med Olden på</li>
@@ -150,10 +162,11 @@
                 <div class="containerHeader">Fjord Suvenir</div>
                 <div class="tripleSubContainer">Lær mer</div>
             </a>
-    </div>
+        </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js"></script>
-    <script src="../js/swiper.js"></script>
-    <script src="../js/butikker.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js"></script>
+        <script src="../js/swiper.js"></script>
+        <script src="../js/butikker.js"></script>
 </body>
+
 </html>
