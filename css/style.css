@@ -905,7 +905,6 @@ h1, h2, h3{
         width: 95%;
     }
 }
-
 @media (max-width: 768px) {
     /* Reset body and html to ensure full width */
     body, html {
@@ -922,15 +921,16 @@ h1, h2, h3{
         justify-content: center;
         position: relative;
         width: 100%;
-        padding: 0 70px 0 20px;
+        /* Change padding to be symmetrical to center the content */
+        padding: 0 70px;
         box-sizing: border-box;
     }
     
     .logo {
         font-size: 1.8rem;
         text-align: center;
-        flex: 1;
-        transform: translateY(25%);
+        margin-top: 30px;
+        transform: none;
     }
     
     /* Show hamburger menu */
