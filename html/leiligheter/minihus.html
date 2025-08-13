@@ -2,6 +2,15 @@
 <html lang="en">
 
 <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2PQLZ5DVNT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-2PQLZ5DVNT');
+</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../css/style.css">
@@ -14,7 +23,7 @@
     <script src="https://kit.fontawesome.com/e065bf0659.js" crossorigin="anonymous"></script>
 
     <script src="../../js/script.js"></script>
-    <title>Minileilighet</title>
+    <title>Tinyhouse</title>
 </head>
 
 <body>
@@ -41,7 +50,7 @@
         </nav>
     </div>
 
-    <h1 class="pageHeader">Minileilighet</h1>
+    <h1 class="pageHeader">Tinyhouse</h1>
 
     <!-- Slider main container -->
     <div class="swiper apt">
@@ -76,7 +85,7 @@
     <div class="infoBar">
         <div class="infoItem"><i class="fa-solid fa-square-parking"></i>&nbsp; Gratis parkering</div>
         <div class="infoItem"><i class="fa-solid fa-wifi"></i>&nbsp;Gratis internett</div>
-        <div class="infoItem"><i class="fa-solid fa-person-swimming"></i>&nbsp;Privat basseng</div>
+        <div class="infoItem"><i class="fa-solid fa-person-swimming"></i>&nbsp;Oppvarmet basseng</div>
         <div class="infoItem"><i class="fa-solid fa-water"></i>&nbsp;Fjordutsikt</div>
         <div class="infoItem"><i class="fa-solid fa-umbrella-beach"></i>&nbsp;Terrasse</div>
         <div class="infoItem"><i class="fa-solid fa-kitchen-set"></i>&nbsp;Kjøkken</div>
@@ -118,7 +127,7 @@
                     <li>Stekeovn, kokeplater og oppvaskmaskin</li>
                     <li>Hage</li>
                     <li>TV</li>
-                    <li>Vaskemaskin</li>
+                    <li>Vaskemaskin, tørketrommel</li>
                     <li>Ladestasjon for elbil</li>
                     <li>Egen inngang</li>
                 </ul>
@@ -132,7 +141,7 @@
                 <h2>Ønsker du å booke leiligheten? Kontakt oss, så hjelper vi deg!</h2>
                 <hr>
                 <form action="https://api.web3forms.com/submit" method="POST" class="contactForm">
-                    <input type="hidden" name="access_key" value="4f4f47b5-b5b4-4bf0-a068-8419dcecea37">
+                    <input type="hidden" name="access_key" value="26392e9d-b6a8-4eaa-be26-5131a1a645e9">
                     <input type="text" value="Minileilighet" name="bookingtype" hidden>
 
                     <div class="form-group">
@@ -144,6 +153,11 @@
                         <label for="email" class="form-label">Epost</label>
                         <input type="email" id="email" name="email" class="form-email" required>
                     </div>
+
+                <div class="form-group">
+                    <label for="phone" class="form-label">Telefon/WhatsApp</label>
+                    <input type="phone" id="phone" name="phone" class="form-phone" required>
+                </div>
 
                     <div class="form-row">
                         <div class="form-group">

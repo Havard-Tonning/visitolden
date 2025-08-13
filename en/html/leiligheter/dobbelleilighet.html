@@ -2,6 +2,15 @@
 <html lang="en">
 
 <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2PQLZ5DVNT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-2PQLZ5DVNT');
+</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../css/style.css">
@@ -74,10 +83,10 @@
     <div class="infoBar">
         <div class="infoItem"><i class="fa-solid fa-square-parking"></i>&nbsp; Free parking</div>
         <div class="infoItem"><i class="fa-solid fa-wifi"></i>&nbsp;Free internet</div>
-        <div class="infoItem"><i class="fa-solid fa-person-swimming"></i>&nbsp;Private pool</div>
+        <div class="infoItem"><i class="fa-solid fa-person-swimming"></i>&nbsp;Heated pool</div>
         <div class="infoItem"><i class="fa-solid fa-water"></i>&nbsp;Fjord view</div>
         <div class="infoItem"><i class="fa-solid fa-umbrella-beach"></i>&nbsp;Terrace</div>
-        <div class="infoItem"><i class="fa-solid fa-kitchen-set"></i>&nbsp;Kitchen</div>
+        <div class="infoItem"><i class="fa-solid fa-kitchen-set"></i>&nbsp;Two kitchens</div>
         <div class="infoItem"><i class="fa-solid fa-house"></i>&nbsp;Whole house alone</div>
 
     </div>
@@ -115,7 +124,7 @@
                 <li>Oven, hob and dishwasher</li>
                 <li>Garden</li>
                 <li>TV</li>
-                <li>Washing machine</li>
+                <li>Washing machine and drier</li>
                 <li>Electric car charging station</li>
                 <li>Private entrance</li>
             </ul>
@@ -129,7 +138,7 @@
             <h2>Do you wish to book the apartment? Get in touch and we will help you!</h2>
             <hr>
             <form action="https://api.web3forms.com/submit" method="POST" class="contactForm">
-                <input type="hidden" name="access_key" value="4f4f47b5-b5b4-4bf0-a068-8419dcecea37">
+                <input type="hidden" name="access_key" value="26392e9d-b6a8-4eaa-be26-5131a1a645e9">
                 <input type="text" value="Dobbelleilighet" name="bookingtype" hidden>
 
                 <div class="form-group">
@@ -140,6 +149,11 @@
                 <div class="form-group">
                     <label for="email" class="form-label">Email</label>
                     <input type="email" id="email" name="email" class="form-email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone" class="form-label">Phone/WhatsApp</label>
+                    <input type="phone" id="phone" name="phone" class="form-phone" required>
                 </div>
 
                 <div class="form-row">
