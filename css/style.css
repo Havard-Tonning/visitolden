@@ -1003,6 +1003,12 @@ h1, h2, h3{
         border-radius: 4px;
     }
 
+    .swiper_image.overnatting{
+        object-fit: contain !important;
+        margin-top: -48%;
+    }
+
+
     .oImgRight{
         position: absolute;
         margin-bottom: -20px !important;

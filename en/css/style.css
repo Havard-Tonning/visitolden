@@ -1039,6 +1039,12 @@ h1, h2, h3{
         padding: 15px;
     }
     
+
+    
+    .swiper_image.overnatting{
+        object-fit: contain !important;
+        margin-top: -48%;
+    }
     /* oMainContainer mobile adjustments */
     .oMainContainer {
         width: 95%;
