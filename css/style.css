@@ -1008,7 +1008,15 @@ h1, h2, h3{
         margin-top: -48%;
     }
 
+    .tripleSubContainer{
+        display:none;
+    }
+    
+    .subContainer{
+        margin-bottom: -50px !important;
+    }
 
+    
     .oImgRight{
         position: absolute;
         margin-bottom: -20px !important;
@@ -1030,6 +1038,10 @@ h1, h2, h3{
 
     .oListRight, .oListLeft{
         margin-left: 20px;
+    }
+
+    .infoBox.invisible{
+        display: none;
     }
     
     /* Hero section adjustments */
