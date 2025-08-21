@@ -1108,7 +1108,7 @@ h3 {
     display: none;
 }
 
-    /* Ensure all containers use full width */
+
     .welcome-text {
         padding: 0 15px;
         margin: 0 auto 30px auto;
@@ -1117,7 +1117,13 @@ h3 {
     .contact-text {
         padding: 0 15px;
     }
+
+    .smaller{
+        font-size:1.5rem;
+    }
+
 }
+
 
 .languages {
     position: absolute;

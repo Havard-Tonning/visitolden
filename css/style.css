@@ -1040,6 +1040,14 @@ h1, h2, h3{
         margin-left: 20px;
     }
 
+    .smaller{
+        font-size:1.5rem;
+    }
+
+    .containerImg{
+        border-radius: 6px;
+    }
+
     .infoBox.invisible{
         display: none;
     }
