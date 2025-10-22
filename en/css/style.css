@@ -2,17 +2,16 @@
     font-family: "Raleway", sans-serif;
 }
 
-body, html {
+body,
+html,
+head {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    width: 100vw;
+    overflow-x: hidden;
+    /* Prevent horizontal scroll */
 }
-
-body {
-    overflow-x: hidden; 
-    box-sizing: border-box; 
-}
-
 
 .logo {
     height: 50px;
@@ -172,7 +171,7 @@ nav {
 }
 
 .subContainer {
-    height: 500px;
+    height: 400px;
     width: calc(50% - 10px);
     min-width: 300px;
     position: relative;
@@ -559,6 +558,7 @@ h3 {
         flex-direction: column;
         gap: 20px;
     }
+
     .aptText,
     .aptInfoBox {
         flex: none;
@@ -730,6 +730,7 @@ h3 {
         flex-direction: column;
         gap: 0;
     }
+
     .submit-button {
         width: 100%;
         max-width: none;
@@ -925,33 +926,29 @@ h3 {
     }
 
     /* Header adjustments */
-.mainHeader {
+    .mainHeader {
         height: 75px;
         flex-direction: row;
         align-items: center;
-        justify-content: space-between; 
+        justify-content: center;
         position: relative;
         width: 100%;
-        padding: 0 20px; 
+        padding: 0 70px 0 20px;
         box-sizing: border-box;
     }
 
-.logo {
+    .logo {
         font-size: 1.8rem;
         text-align: center;
-        flex: 0 1 auto; 
-        transform: none; 
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        top: 20px;
-        z-index: 1; 
+        flex: 1;
+        transform: translateY(25%);
     }
 
     /* Show hamburger menu */
     .hamburger {
         display: flex;
     }
+
     /* Hide regular nav and show mobile nav */
     nav {
         display: none;
@@ -987,20 +984,24 @@ h3 {
         box-sizing: border-box;
         height: auto;
     }
+
     .linkBox:hover {
         transform: scale(1) !important;
         background-color: #def5f3;
         border-radius: 0;
     }
+
     /* Content adjustments */
     .content-wrapper {
         padding: 15px;
         width: 100%;
     }
+
     .textBox {
         margin: 15px;
         width: calc(100% - 30px);
     }
+
     .section-header {
         padding-left: 15px;
         font-size: 1.5rem;
@@ -1081,6 +1082,7 @@ h3 {
         width: 100%;
         padding: 0 20px;
     }
+
     .infoBox {
         position: relative;
         display: inline-block;
@@ -1088,6 +1090,7 @@ h3 {
         padding: 12px 25px;
         font-size: 1.2rem;
     }
+
     /* Contact center fix */
     .contact-center {
         margin-left: 0;
@@ -1151,18 +1154,3 @@ h3 {
     transition: ease-in-out 0.2s;
 }
 
-.messageButtonLink{
-    position: fixed !important;
-    height: 50px; 
-    bottom:0;
-    z-index: 1000;
-    right: 0;
-    margin-bottom: 10px;
-    margin-right: 20px;
-    border: solid 2px rgb(211, 211, 211);
-    border-radius: 15px;    
-}
-
-.messageButton{
-    height: 50px;
-}
