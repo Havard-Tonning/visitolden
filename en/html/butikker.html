@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2PQLZ5DVNT"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-2PQLZ5DVNT');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <script src="../js/script.js"></script>
+    <title>Stores</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="https://kit.fontawesome.com/e065bf0659.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script async
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB3A38-HBahOCFrq2acIktVLUPscWHOWT8&callback=console.debug&libraries=maps,marker&v=beta">
+    </script>
+
+</head>
+
+<body>
+    <div class="mainHeader">
+        <div class="languages">
+            <a href="#" class="language active">En</a>
+            <a href="../../html/butikker.html" class="language">No</a>
+        </div>
+        <a href="../index.html">
+            <h1 class="logo">Visit Olden</h1>
+        </a>
+        <button class="hamburger" aria-label="Meny" aria-expanded="false">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+        <nav>
+            <a href="../index.html" class="linkBox">Home</a>
+            <a href="overnatting.html" class="linkBox">Accomodation</a>
+            <a href="arrangement.html" class="linkBox">Events</a>
+            <a href="butikker.html" class="linkBox active">Stores</a>
+            <a href="spise.html" class="linkBox">Restaurants</a>
+            <a href="todo.html" class="linkBox">Things to do</a>
+            <a href="omoss.html" class="linkBox">About us</a>  
+            <a href="kontakt.html" class="linkBox">Contact</a>          
+
+        </nav>
+    </div>
+
+    <div class="content-wrapper">
+        <h3 class="section-header">Grocery stores</h3>
+        <div class="mainContainer">
+            <a class="subContainer" href="./butikker/bunnpris.html">
+                <div class="subSubContainer">
+                    <img src="../bilder/bunnpris.jpg" class="containerImg food">
+                    <ul class="hoverInfo">
+                        <li>The biggest grocery store in the village</li>
+                        <li>A wide array of products, including ready made hot food</li>
+                        <li>Open Monday-Saturday 07:00-20:00</li>
+                        <li>Open Sunday 10:00-18:00</li>
+                    </ul>
+                </div>
+                <div class="containerHeader">Bunnpris</div>
+                <div class="tripleSubContainer">Learn more</div>
+            </a>
+
+            <a class="subContainer" href="./butikker/coop.html">
+                <div class="subSubContainer">
+                    <img src="../bilder/coop.jpg" class="containerImg food">
+                    <ul class="hoverInfo">
+                        <li>Grocery store that also has a post office and souvenirs</li>
+                        <li>Open Monday-Saturday 09:00-19:00</li>
+                        <li>Open Sunday 11:00-17:00</li>
+                    </ul>
+                </div>
+                <div class="containerHeader">Coop Marked</div>
+                <div class="tripleSubContainer">Learn more</div>
+            </a>
+        </div>
+
+        <h3 class="section-header">Clothing stores</h3>
+        <div class="mainContainer">
+            <a class="subContainer" href="./butikker/riccovero.html">
+                <div class="subSubContainer">
+                    <img src="../bilder/riccovero.jpg" class="containerImg food">
+                    <ul class="hoverInfo">
+                        <li>A local fashion brand started in 1936</li>
+                        <li>Shirts, dresses, suits, shoes, and everything else needed for a smart look</li>
+                        <li>Open Monday-Friday 09:00-18:00</li>
+                        <li>Open Saturday 10:00-17:00</li>
+                        <li>Open Sunday 12:00-17:00</li>
+                    </ul>
+                </div>
+                <div class="containerHeader">Riccovero</div>
+                <div class="tripleSubContainer">Learn more</div>
+            </a>
+
+            <a class="subContainer" href="./butikker/skogstad.html">
+                <div class="subSubContainer">
+                    <img src="../bilder/skogstad.jpg" class="containerImg food">
+                    <ul class="hoverInfo">
+                        <li>Local brand recognized for quality clothing for sports and outdoor life</li>
+                        <li>Outlet next door</li>
+                        <li>Open Monday-Friday 10:00-17:00</li>
+                        <li>Open Saturday 10:00-18:00</li>
+                        <li>Open Sunday 12:00-16:00</li>
+                    </ul>
+                </div>
+                <div class="containerHeader">Skogstad</div>
+                <div class="tripleSubContainer">Learn more</div>
+            </a>
+
+            <a class="subContainer" href="./butikker/outlet.html">
+                <div class="subSubContainer">
+                    <img src="../bilder/outlet.jpg" class="containerImg food">
+                    <ul class="hoverInfo">
+                        <li>A range of brand name items in sports and outdoor life at outlet prices</li>
+                        <li>Open Monday-Saturday 09:00-18:00</li>
+                    </ul>
+                </div>
+                <div class="containerHeader">Olden Outlet</div>
+                <div class="tripleSubContainer">Learn more</div>
+            </a>
+        </div>
+
+        <h3 class="section-header">Souvenirs</h3>
+        <div class="mainContainer">
+            <a class="subContainer" href="./butikker/ljos.html">
+                <div class="subSubContainer">
+                    <img src="../bilder/ljos.jpg" class="containerImg food">
+                    <ul class="hoverInfo">
+                        <li>A cozy little shop with postcards, posters and scented candles</li>
+                        <li>Open on days with cruise ships</li>
+                    </ul>
+                </div>
+                <div class="containerHeader">Ljos</div>
+                <div class="tripleSubContainer">Learn more</div>
+            </a>
+
+            <a class="subContainer" href="./butikker/viking.html">
+                <div class="subSubContainer">
+                    <img src="../bilder/viking.jpg" class="containerImg food">
+                    <ul class="hoverInfo">
+                        <li>As the name suggests, there are many replicas of viking equipment</li>
+                        <li>They also have handmade items, such as Christmas ornaments and wood carvings</li>
+                        <li>Open on days with cruise ships</li>
+                    </ul>
+                </div>
+                <div class="containerHeader">The Viking Shop</div>
+                <div class="tripleSubContainer">Learn more</div>
+            </a>
+
+            <a class="subContainer" href="./butikker/fjordsuvenir.html">
+                <div class="subSubContainer">
+                    <img src="../bilder/fs1.jpg" class="containerImg food">
+                    <ul class="hoverInfo">
+                        <li>The largest souvenir shop in Olden</li>
+                        <li>Everything from Viking helmets to spoons with Olden on them</li>
+                        <li>Open on days with cruise ships</li>
+                    </ul>
+                </div>
+                <div class="containerHeader">Fjord Suvenir</div>
+                <div class="tripleSubContainer">Learn more</div>
+            </a>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js"></script>
+        <script src="../js/swiper.js"></script>
+        <script src="../js/butikker.js"></script>
+</body>
+</html>
