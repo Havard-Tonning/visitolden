@@ -64,19 +64,20 @@ nav {
     height: 40px;
     transition: ease-in-out 0.2s;
     white-space: nowrap;
+    border: 1px solid transparent;  
+    border-radius: 5px;              
+    box-sizing: border-box;  
 }
 
 .linkBox.active {
     background-color: #def5f3;
-    border-radius: 5px;
     border: 1px solid #5a8f7c;
 }
 
 .linkBox:hover {
     scale: 1.2;
     background-color: #def5f3;
-    border-radius: 5px;
-    border: 1px solid #5a8f7c;
+    border-color: #5a8f7c;
     transition: ease-in-out 0.2s;
 }
 
@@ -1038,7 +1039,6 @@ h3 {
         margin-left: 20px;
     }
 
-    /* Hero section adjustments */
     .hero-title {
         font-size: 2.5rem;
     }
@@ -1056,7 +1056,6 @@ h3 {
         margin-top: -48%;
     }
 
-    /* oMainContainer mobile adjustments */
     .oMainContainer {
         width: 95%;
         margin-left: 2.5%;
@@ -1136,6 +1135,7 @@ h3 {
     margin: 5px;
     padding: 5px;
     transition: ease-in-out 0.2s;
+    border: 1px transparent;
 
 }
 
